@@ -51,6 +51,7 @@ const CollapsableCardStacker = ({
   };
 
   const handleWheel = (e) => {
+    console.log("Wheel event:", e);
     if (isAnimating || scrollDebounceRef.current) {
       e.preventDefault();
       return;
